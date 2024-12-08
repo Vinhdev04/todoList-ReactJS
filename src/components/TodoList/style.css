@@ -1,0 +1,131 @@
+h1 {
+  font-size: 40px;
+  color: #fff;
+}
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-flow: column;
+  padding: 32px;
+  background: darkcyan;
+}
+
+.todo__wrapper {
+  margin-bottom: 30px;
+}
+
+.todo__list {
+  list-style: circle;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid #ddd;
+  background: #ddd;
+}
+
+.todo__list li {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #1b1b1b;
+  font-weight: 500px;
+  font-style: italic;
+  cursor: pointer;
+  padding: 16px;
+  background-color: lightcyan;
+
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task {
+  /* flex: 1; */
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todo__list li:active {
+  text-decoration: line-through;
+  color: #dddd;
+}
+
+.todo__input {
+  outline: 0;
+  width: 320px;
+  border: 1px solid #ddd;
+  height: 18px;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.todo__input:focus {
+  border: 1px solid #7474b8;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s all linear;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.todo__btn {
+  background: rgb(84, 175, 84);
+}
+
+.delete__btn {
+  background-color: rgb(159 86 106);
+  font-size: 14px;
+}
+
+.moveOn__btn {
+  background-color: #2972cd;
+  font-size: 14px;
+}
+
+.moveDown__btn {
+  background-color: #3ec348;
+  font-size: 14px;
+}
+
+.moveDown__btn,
+.moveOn__btn {
+  /* padding: 8px 12px; */
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #ccc;
+  cursor: no-drop;
+}
+
+.complete__btn {
+  background-color: cadetblue;
+  color: #fff;
+}
